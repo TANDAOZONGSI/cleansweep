@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>定价 - CleanSweep</title>
+    <style>
+        body { font-family: system-ui, sans-serif; max-width: 800px; margin: 40px auto; padding: 20px; }
+        .plan { border: 1px solid #ddd; border-radius: 16px; padding: 30px; text-align: center; background: #fff; box-shadow: 0 4px 12px rgba(0,0,0,0.05); }
+        .price { font-size: 36px; font-weight: bold; color: #0078d4; }
+        .buy-btn { background: #0078d4; color: white; border: none; padding: 12px 40px; border-radius: 40px; font-size: 18px; cursor: pointer; border: none; }
+        .footer { margin-top: 40px; border-top: 1px solid #eee; padding-top: 20px; font-size: 14px; text-align: center; }
+    </style>
+    <!-- Paddle.js 脚本 (等待你获得 Client-side Token 后替换) -->
+    <script src="https://cdn.paddle.com/paddle/v2/paddle.js"></script>
+    <script>
+        // 你需要在 Paddle 后台获取 Token 并替换这里的 'YOUR_CLIENT_SIDE_TOKEN'
+        Paddle.Environment.set('sandbox'); // 测试时用 sandbox，上线后改为 'production'
+        Paddle.Initialize({ token: 'live_2d164515192c9ac0323c28a74ad' });
+    </script>
+</head>
+<body>
+    <h1>选择适合你的 CleanSweep 方案</h1>
+    <div class="plan">
+        <h2>CleanSweep 专业版</h2>
+        <p>一次性买断，终身使用，无订阅套路。</p>
+        <div class="price">$9.99 <span style="font-size: 16px; font-weight: normal; color: #666;">美元</span></div>
+        <ul style="list-style: none; padding: 0; text-align: left; display: inline-block;">
+            <li>✅ 1 台设备授权</li>
+            <li>✅ 永久更新支持</li>
+            <li>✅ 无广告、无后台</li>
+        </ul>
+        <br>
+        <!-- 这里等 Paddle 审核通过后，把按钮替换为真实的 Paddle 支付按钮代码 -->
+        <button class="buy-btn" onclick="alert('即将接入 Paddle 支付')">立即购买</button>
+        <p style="font-size: 0.9em; color: #666;">安全支付 · 自动获取激活码</p>
+    </div>
+    <div class="footer">
+        <a href="index.html">← 返回首页</a>
+    </div>
+</body>
+</html>
