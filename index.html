@@ -10,11 +10,11 @@
         .buy-btn { background: #0078d4; color: white; border: none; padding: 12px 40px; border-radius: 40px; font-size: 18px; cursor: pointer; border: none; }
         .footer { margin-top: 40px; border-top: 1px solid #eee; padding-top: 20px; font-size: 14px; text-align: center; }
     </style>
-    <!-- Paddle.js 脚本 (等待你获得 Client-side Token 后替换) -->
+
     <script src="https://cdn.paddle.com/paddle/v2/paddle.js"></script>
     <script>
-        // 你需要在 Paddle 后台获取 Token 并替换这里的 'YOUR_CLIENT_SIDE_TOKEN'
-        Paddle.Environment.set('sandbox'); // 测试时用 sandbox，上线后改为 'production'
+
+        Paddle.Environment.set('sandbox'); 
         Paddle.Initialize({ token: 'live_2d164515192c9ac0323c28a74ad' });
     </script>
 </head>
@@ -30,7 +30,6 @@
             <li>✅ 无广告、无后台</li>
         </ul>
         <br>
-        <!-- 这里等 Paddle 审核通过后，把按钮替换为真实的 Paddle 支付按钮代码 -->
         <button class="buy-btn" onclick="alert('即将接入 Paddle 支付')">立即购买</button>
         <p style="font-size: 0.9em; color: #666;">安全支付 · 自动获取激活码</p>
     </div>
